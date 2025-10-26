@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Kiko Milano GZ</title>
+  <link rel="stylesheet" href="estilos.css">
+  <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Encabezado -->
+  <header>
+    <h1>Tienda de Gonzalo</h1>
+    <nav>
+      <a href="#productos">Ingrese aquí para ver los productos</a> |
+      <a href="#contacto">Contacto en mis redes</a>
+    </nav>
+    <div id="carrito-info">
+      🛒 Productos en carrito: <span id="contador">0</span>
+    </div>
+  </header>
+
+  <!-- Sección de productos -->
+  <section id="productos">
+    <h2>Productos de este noviembre 2025</h2>
+
+    <article>
+      <h3>Collar de Cuervo</h3>
+      <p>Collar de plata con diseño oscuro y elegante.</p>
+      <p class="precio" data-precio="500">Precio: $500</p>
+      <img src="https://www.joyeriasanchez.com/blog/wp-content/uploads/2024/10/Collares-1024x571.jpg" alt="Collar de cuervo" width="600">
+      <button class="agregar-carrito">Agregar al carrito</button>
+    </article>
+
+    <article>
+      <h3>Camisa Negra Victoriana</h3>
+      <p>Camisa con encaje y botones antiguos, ideal para eventos nocturnos.</p>
+      <p class="precio" data-precio="1500">Precio: $1500</p>
+      <img src="https://deliver.com.ar/cdn/shop/products/Remera_Oversize_2.01-18-negro-scaled.jpg?v=1759413083" alt="Camisa victoriana" width="600">
+      <button class="agregar-carrito">Agregar al carrito</button>
+    </article>
+  </section>
+
+  <!-- Sección del carrito -->
+  <section id="ver-carrito">
+    <h2>Carrito</h2>
+    <ul id="lista-carrito"></ul>
+    <p id="total">Total: $0</p>
+    <button id="vaciar-carrito">Vaciar carrito</button>
+    <button id="finalizar-compra">Finalizar compra</button>
+  </section>
+
+  <!-- Formulario de pago -->
+  <section id="formulario-pago">
+    <h2>Finalizar compra</h2>
+    <form id="form-compra">
+      <label for="nombre">Nombre completo:</label><br>
+      <input type="text" id="nombre" required><br><br>
+
+      <label for="email">Correo electrónico:</label><br>
+      <input type="email" id="email" required><br><br>
+
+      <label for="metodo">Método de pago:</label><br>
+      <select id="metodo" required>
+        <option value="">Seleccionar</option>
+        <option value="tarjeta">Tarjeta de crédito</option>
+        <option value="transferencia">Transferencia bancaria</option>
+        <option value="efectivo">Pago en efectivo</option>
+      </select><br><br>
+
+      <button type="submit">Confirmar compra</button>
+    </form>
+  </section>
+
+  <!-- Historial de compras -->
+  <section id="historial">
+    <h2>Historial de compras</h2>
+    <ul id="lista-historial"></ul>
+  </section>
+
+  <!-- Pie de página -->
+  <footer id="contacto">
+    <p>Contacto: gonezeflor@hotmail.com</p>
+    <p>© 2025 Octubre - Tienda GZ</p>
+  </footer>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>

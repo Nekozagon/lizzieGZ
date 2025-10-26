@@ -1,0 +1,164 @@
+/* Tipografías góticas */
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&family=Roboto&display=swap');
+
+body {
+  background: #121212 url('https://www.transparenttextures.com/patterns/dark-mosaic.png');
+  background-repeat: repeat;
+  color: #e0e0e0;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Encabezado con estilo gótico */
+header {
+  background-color: #1f1f1f;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 2px solid #444;
+}
+
+header h1 {
+  font-size: 2.5em;
+  color: #c0a0ff;
+  text-shadow: 2px 2px #000;
+  font-family: 'UnifrakturCook', cursive;
+  letter-spacing: 1px;
+}
+
+/* Navegación */
+nav a {
+  color: #e0e0e0;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+nav a:hover {
+  color: #c0a0ff;
+}
+
+/* Sección de productos */
+section#productos {
+  padding: 30px;
+}
+
+article {
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+article h3 {
+  color: #ffccff;
+  font-family: 'UnifrakturCook', cursive;
+}
+
+article img {
+  display: block;
+  margin-top: 10px;
+  border: 2px solid #444;
+  max-width: 100%;
+  height: auto;
+}
+
+article:hover {
+  background-color: #292929;
+  transform: scale(1.02);
+  box-shadow: 0 0 10px #c0a0ff;
+}
+
+/* Carrito info */
+#carrito-info {
+  margin-top: 10px;
+  font-size: 1.2em;
+  color: #ffccff;
+}
+
+/* Botones */
+button {
+  background-color: #660066;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #990099;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #c0a0ff;
+}
+
+/* Contenedor general */
+header, section, footer {
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Pie de página */
+footer {
+  background-color: #1f1f1f;
+  color: #999;
+  text-align: center;
+  padding: 20px;
+  border-top: 2px solid #444;
+}
+
+/* Validaciones visuales */
+input.error, select.error {
+  border: 2px solid red;
+  background-color: #2a0000;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.9em;
+  margin-top: -8px;
+  margin-bottom: 10px;
+}
+
+/* Diseño responsivo para móviles */
+@media screen and (max-width: 600px) {
+  header, section, footer {
+    padding: 10px;
+  }
+
+  header h1 {
+    font-size: 1.8em;
+  }
+
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  article {
+    padding: 10px;
+  }
+
+  article img {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  #carrito-info {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  form input,
+  form select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+}
